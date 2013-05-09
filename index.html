@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <title></title>
+  
+  <link rel="stylesheet" href="http://code.jquery.com/mobile/1.3.1/jquery.mobile-1.3.1.min.css" />
+  <link rel="stylesheet" href="css/style.css">
+  
+
+  <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+  <script src="http://code.jquery.com/mobile/1.3.1/jquery.mobile-1.3.1.min.js"></script>
+  <script src="js/index.js"></script>
+   
+</head>
+<body>
+<!-- Home -->
+<div data-role="page" id="page1">
+    <div data-theme="a" data-role="header">
+        <h3>
+            Inicio
+        </h3>
+    </div>
+    <div data-role="content">
+        <h1>
+            Bienvenido a la pagina de pruebas
+        </h1>
+        <div style=" text-align:center">
+            <img style="width: 200px; height: 200px" src="img/inicio.png">
+        </div>
+    </div>
+    <div data-theme="a" data-role="footer" data-position="fixed">
+        <div data-role="navbar" data-iconpos="top">
+            <ul>
+                <li>
+                    <a href="#page1" data-transition="fade" data-theme="" data-icon="home" class="ui-btn-active">
+                        Inicio
+                    </a>
+                </li>
+                <li>
+                    <a href="#page2" data-transition="fade" data-theme="" data-icon="star">
+                        Pagina 2
+                    </a>
+                </li>
+                <li>
+                    <a href="#page3" data-transition="fade" data-theme="" data-icon="star">
+                        Pagina 3
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+
+
+<div data-role="page" id="page2">
+    <div data-theme="a" data-role="header">
+        <a data-role="button" href="#page1" data-icon="home" data-iconpos="left"
+        class="ui-btn-left">
+            Inicio
+        </a>
+        <h3>
+            Pagina 2
+        </h3>
+    </div>
+    <div data-role="content">
+        <h2>
+            Un formulario base
+        </h2>
+        <form action="">
+            <div data-role="fieldcontain">
+                <label for="textinput1">
+                    Nombre
+                </label>
+                <input name="" id="textinput1" placeholder="" value="" type="text">
+            </div>
+            <div data-role="fieldcontain">
+                <label for="textinput2">
+                    Apellido
+                </label>
+                <input name="" id="textinput2" placeholder="" value="" type="text">
+            </div>
+            <div id="checkboxes1" data-role="fieldcontain">
+                <fieldset data-role="controlgroup" data-type="vertical">
+                    <legend>
+                        Color preferido:
+                    </legend>
+                    <input id="checkbox1" name="color" type="checkbox">
+                    <label for="checkbox1">
+                        Verde
+                    </label>
+                    <input id="checkbox2" name="color" type="checkbox">
+                    <label for="checkbox2">
+                        Rojo
+                    </label>
+                    <input id="checkbox3" name="color" type="checkbox">
+                    <label for="checkbox3">
+                        Azul
+                    </label>
+                </fieldset>
+            </div>
+            <input data-icon="check" data-iconpos="right" value="Enviar" type="submit">
+        </form>
+    </div>
+    <div data-theme="a" data-role="footer" data-position="fixed">
+        <div data-role="navbar" data-iconpos="top">
+            <ul>
+                <li>
+                    <a href="#page1" data-transition="fade" data-theme="" data-icon="home">
+                        Inicio
+                    </a>
+                </li>
+                <li>
+                    <a href="#page2" data-transition="fade" data-theme="" data-icon="star" class="ui-btn-active">
+                        Pagina 2
+                    </a>
+                </li>
+                <li>
+                    <a href="#page3" data-transition="fade" data-theme="" data-icon="star">
+                        Pagina 3
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+
+<div data-role="page" id="page3">
+    <div data-theme="a" data-role="header">
+        <a data-role="button" href="#page1" data-icon="home" data-iconpos="left"
+        class="ui-btn-left">
+            Inicio
+        </a>
+        <h3>
+            Pagina 3
+        </h3>
+    </div>
+    <div data-role="content">
+        <img src="https://maps.googleapis.com/maps/api/staticmap?center=Guanahani 580 CABA&amp;zoom=14&amp;size=300x400&amp;markers=Guanahani 580 CABA&amp;sensor=false"
+        height="400" width="300">
+    </div>
+    <div data-theme="a" data-role="footer" data-position="fixed">
+        <div data-role="navbar" data-iconpos="top">
+            <ul>
+                <li>
+                    <a href="#page1" data-transition="fade" data-theme="" data-icon="home">
+                        Inicio
+                    </a>
+                </li>
+                <li>
+                    <a href="#page2" data-transition="fade" data-theme="" data-icon="star">
+                        Pagina 2
+                    </a>
+                </li>
+                <li>
+                    <a href="#page3" data-transition="fade" data-theme="" data-icon="star" class="ui-btn-active">
+                        Pagina 3
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+</body>
+</html>
