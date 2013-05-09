@@ -6,10 +6,10 @@
         id        = "com.phonegap.hello-world"
         version   = "1.0.0">
 
-    <name>JQMSite test</name>
+    <name>Administrador de Infra BPBA</name>
 
     <description>
-        Aplicacion para testear JQM y Phonegap
+        Aplicacion para administrar de manera remota la infraestructura de BPBA
     </description>
 
     <author href="http://www.santiagolombardi.com.ar" email="santiago.lombardi@gmail.com">
